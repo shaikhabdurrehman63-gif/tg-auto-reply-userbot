@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 # ============================================================
 # 👇👇👇 YAHAN APNA BOT TOKEN DAALEIN (BotFather se milega) 👇👇👇
 # ============================================================
-BOT_TOKEN = os.environ.get("8587339845:AAFXqckprYu4NhCapHfdfOK6r5Tr0LFxGnk")
+BOT_TOKEN = os.environ.get("")
 
 # ============================================================
 # 👇👇👇 YAHAN APNI TELEGRAM USER ID DAALEIN 👇👇👇
@@ -157,7 +157,7 @@ async def route_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 def main():
-    if BOT_TOKEN == "8587339845:AAFXqckprYu4NhCapHfdfOK6r5Tr0LFxGnk":
+    if BOT_TOKEN == "":
         raise RuntimeError("Please set BOT_TOKEN environment variable or edit bot.py")
 
     app = ApplicationBuilder().token(BOT_TOKEN).build()
